@@ -1,0 +1,36 @@
+.menu-bar {
+  top: 0;
+  left: 0;
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+.menu-bar__item {
+  display: flex;
+  column-gap: 50px;
+  list-style-type: none;
+}
+.menu-bar__item li a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-bar {
+    padding: 0 20px;
+    width: calc(100% - 40px);
+  }
+  .menu-bar__item {
+    display: none;
+  }
+  .menu-bar__item--mobile {
+    display: flex !important;
+    column-gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=menu-bar.css.map */

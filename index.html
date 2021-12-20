@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="./font-awesome/css/all.css" rel="stylesheet"><!--load all styles -->
+    <link href="./font-awesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/menu-bar/menu-bar.css" />
+    <link rel="stylesheet" href="./css/section-1/section-1.css" />
     <link rel="stylesheet" href="./css/section-2/section-2.css" />
 
     <link rel="icon" href="huge.webp" type="image/icon type">
     <title>Huge Code Challenge</title>
 </head>
+
 <body>
-    <!-- Section 2 -->
-    <div class="section-2-wrapper">
-        <div class="section-2-wrapper__shape" id="global-shape">
+    <header class="menu-bar">
+        <a href="#" class="menu-bar__logo">
+            <img src="./nikkoam.png" />
+        </a>
+        <ul class="menu-bar__item">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Funds</a></li>
+            <li><a href="#">How to invest</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Insight & News</a< /li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+
+        <ul class="menu-bar__item menu-bar__item--mobile" style="display: none;">
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </header>
+    <div class="main-content">
+        <!-- Section 1 -->
+        <img src="./test.png" id="sotiphicated_shape" />
+        <div class="section-1-wrapper">
+            <div class="section-1-wrapper__shape">
+
+            </div>
+            <div class="section-1-wrapper__content content">
+                <div class="content__title">
+                    Progressive Solutions<br>
+                    Competitive Performance<br>
+                    Global Citizen with Asian DNA
+                </div>
+                <div class="content__description">
+                    <div class="text">
+                        We’re one of Asia’s largest asset managers.
+                    </div>
+                    <div class="link">
+                        <a href="#">Learn more about what makes us unique <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        <div class="section-2-wrapper__content content">
-            <div class="content__subtitle">
-                Team of unique combination
+        <!-- Section 2 -->
+        <div class="section-2-wrapper">
+            <div class="section-2-wrapper__shape" id="global-shape">
+                <!--Draw shape here-->
             </div>
-            <div class="content__title">
-                Global Intelligence Asian Insights Local Experience
-            </div>
-            <div class="content__description">
-                <div class="text">
-                    We transform intelligent insights into innovative, relevant investment opportunities for our clients. Leveraging our
-                    unique combination of a global perspective complemented by our Asian DNA, we aspire to create sophisticated and diverse
-                    solutions that set new standards in the asset management industry.
+            <div class="section-2-wrapper__content content">
+                <div class="content__subtitle">
+                    Team of unique combination
                 </div>
-                <div class="link">
-                    <a href="#">Learn more about what makes us unique <i class="fas fa-arrow-circle-right"></i></a>
+                <div class="content__title">
+                    Global Intelligence Asian Insights Local Experience
                 </div>
-                
+                <div class="content__description">
+                    <div class="text">
+                        We transform intelligent insights into innovative, relevant investment opportunities for our
+                        clients.
+                        Leveraging our
+                        unique combination of a global perspective complemented by our Asian DNA, we aspire to create
+                        sophisticated and diverse
+                        solutions that set new standards in the asset management industry.
+                    </div>
+                    <div class="link">
+                        <a href="#">Learn more about what makes us unique <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -46,6 +99,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="./js/section-1.js"></script>
     <script src="./js/section-2.js"></script>
 </footer>
+
 </html>
