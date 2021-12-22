@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="./font-awesome/css/all.css" rel="stylesheet">
+
     <!--load all styles -->
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./css/menu-bar/menu-bar.css" />
     <link rel="stylesheet" href="./css/section-1/section-1.css" />
     <link rel="stylesheet" href="./css/section-2/section-2.css" />
+    <link rel="stylesheet" href="./css/section-3/section-3.css" />
+    <link rel="stylesheet" href="./css/footer/footer.css" />
 
     <link rel="icon" href="huge.webp" type="image/icon type">
     <title>Huge Code Challenge</title>
@@ -40,7 +43,7 @@
     </header>
     <div class="main-content">
         <!-- Section 1 -->
-        <img src="./test.png" id="sotiphicated_shape" />
+        <img src="./shape.svg" id="sotiphicated_shape" />
         <div class="section-1-wrapper">
             <div class="section-1-wrapper__shape">
 
@@ -63,10 +66,11 @@
             </div>
 
         </div>
+
         <!-- Section 2 -->
         <div class="section-2-wrapper">
             <div class="section-2-wrapper__shape" id="global-shape">
-                <!--Draw shape here-->
+
             </div>
             <div class="section-2-wrapper__content content">
                 <div class="content__subtitle">
@@ -91,16 +95,211 @@
                 </div>
             </div>
         </div>
+
+        <!-- Section 3 -->
+        <div class="section-3-wrapper">
+            <div class="section-3-wrapper__section carousel-section">
+                <ul class="section-list section">
+                    <li class="section__item section__item--active" data-index="1">01</li>
+                    <li class="section__item" data-index="2">02</li>
+                    <li class="section__item" data-index="3">03</li>
+                    <li class="section__item" data-index="4">04</li>
+                </ul>
+                <input hidden value="1" id="current_index" />
+            </div>
+            <div class="section-3-wrapper__right">
+                <div class="content-subtitle">
+                    Our Featured Funds
+                </div>
+                <ul class="section-list section-list--mobile section">
+                    <li class="section__item section__item--active" data-index="1">01</li>
+                    <li class="section__item" data-index="2">02</li>
+                    <li class="section__item" data-index="3">03</li>
+                    <li class="section__item" data-index="4">04</li>
+                </ul>
+                <div class="section-3-wrapper__carousel carousel-wrapper">
+                    <div class="carousel-wrapper__inner-content carousel-inner-content">
+                        <div class="carousel-inner-content__carousel-item content">
+                            <div class="content__subtitle">
+                                Nikko AM ARK Disruptive Innovation Fund
+                            </div>
+                            <div class="responsive-wrapper">
+                                <div class="content__graph">
+                                    <img src="./graph.svg" />
+                                </div>
+                                <div class="content__description">
+                                    <div class="data-analyze">
+                                        <div class="data-item">
+                                            <div class="title">NAV (per 100 shares)</div>
+                                            <div class="value">¥196,977</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Net Assets</div>
+                                            <div class="value">7,309,193 million</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Day Change</div>
+                                            <div class="value">- ¥1,094</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Issued</div>
+                                            <div class="value">3,710,686,634 shares</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="link">
+                                <a href="#">Explore more funds <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-inner-content__carousel-item content">
+                            <div class="content__subtitle">
+                                The standard Lorem Ipsum
+                            </div>
+                            <div class="responsive-wrapper">
+                                <div class="content__graph">
+                                    <img src="./graph.svg" />
+                                </div>
+                                <div class="content__description">
+                                    <div class="data-analyze">
+                                        <div class="data-item">
+                                            <div class="title">NAV (per 100 shares)</div>
+                                            <div class="value">¥196,977</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Net Assets</div>
+                                            <div class="value">7,309,193 million</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Day Change</div>
+                                            <div class="value">- ¥1,094</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Issued</div>
+                                            <div class="value">3,710,686,634 shares</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="link">
+                                <a href="#">Explore more funds <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-inner-content__carousel-item content">
+                            <div class="content__subtitle">
+                                1914 translation by H. Rackham
+                            </div>
+                            <div class="responsive-wrapper">
+                                <div class="content__graph">
+                                    <img src="./graph.svg" />
+                                </div>
+                                <div class="content__description">
+                                    <div class="data-analyze">
+                                        <div class="data-item">
+                                            <div class="title">NAV (per 100 shares)</div>
+                                            <div class="value">¥196,977</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Net Assets</div>
+                                            <div class="value">7,309,193 million</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Day Change</div>
+                                            <div class="value">- ¥1,094</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Issued</div>
+                                            <div class="value">3,710,686,634 shares</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="link">
+                                <a href="#">Explore more funds <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-inner-content__carousel-item content">
+                            <div class="content__subtitle">
+                                Maecenas nec odio et ante tincidunt tempus
+                            </div>
+                            <div class="responsive-wrapper">
+                                <div class="content__graph">
+                                    <img src="./graph.svg" />
+                                </div>
+                                <div class="content__description">
+                                    <div class="data-analyze">
+                                        <div class="data-item">
+                                            <div class="title">NAV (per 100 shares)</div>
+                                            <div class="value">¥196,977</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Net Assets</div>
+                                            <div class="value">7,309,193 million</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Day Change</div>
+                                            <div class="value">- ¥1,094</div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="title">Issued</div>
+                                            <div class="value">3,710,686,634 shares</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="link">
+                                <a href="#">Explore more funds <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-wrapper">
+            <div class="footer-wrapper__left footer-left">
+                Invest with<br><span style="color: #1CAEC0">Nikko AM</span>
+            </div>
+            <div class="footer-wrapper__right footer-right">
+                <ul class="footer-right__list footer-info">
+                    <li class="footer-info__item">
+                        <div class="label">Equity</div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </li>
+                    <li class="footer-info__item">
+                        <div class="label">Bond</div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </li>
+                    <li class="footer-info__item">
+                        <div class="label">Multi-Assets</div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </li>
+                    <li class="footer-info__item">
+                        <div class="label">ETFs</div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 
 <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollToPlugin.min.js"></script>
     <script src="./js/section-1.js"></script>
     <script src="./js/section-2.js"></script>
+    <script src="./js/section-3.js"></script>
 </footer>
 
 </html>

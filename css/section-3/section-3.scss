@@ -1,0 +1,246 @@
+.section-3-wrapper {
+    height: auto;
+    display: flex;
+    padding: 0 100px;
+    .section-list {
+        text-decoration: none;
+        font-size: 150px;
+        list-style-type: none;
+        color: #e1f1f3;
+        cursor: pointer;
+        z-index: 100;
+        position: relative;
+        user-select: none;
+        margin: 0;
+        text-align: right;
+        padding-right: 50px;
+        &--mobile {
+            display: none;
+            font-size: 52px;
+        }
+
+        .section {
+            &__item {
+                &--active {
+                    color: #00a4b8;
+                }
+            }
+        }
+    }
+
+    &__section {
+        width: 35%;
+        margin-top: 120px;
+    }
+
+    @mixin set-width($total_item, $gap_between_item) {
+        width: calc($total_item * (100% + $gap_between_item)); /* items * (width + margin) */
+
+        .carousel-inner-content {
+            &__carousel-item {
+                width: calc((100% - ($gap_between_item * $total_item)) / $total_item);
+            }
+        }
+    }
+
+    &__right {
+        margin-top: 100px !important;
+        width: 65%;
+        .content-subtitle {
+            font-size: 73px;
+            margin-top: 50px;
+            width: 600px;
+            font-weight: bold;
+        }
+    }
+
+    &__carousel {
+        height: calc(100% - 190px);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        .carousel-wrapper {
+            &__inner-content {
+                height: 100%;
+                display: flex;
+                //column-gap: 20px;
+                //position: absolute;
+                @include set-width(4, 0px);
+                .carousel-inner-content {
+                    &__carousel-item {
+                        height: 100%;
+                        //position: absolute;
+                        overflow: hidden;
+
+                        .content {
+                            &__title {
+                                font-size: 73px;
+                                margin-top: 50px;
+                                width: 600px;
+                                font-weight: bold;
+                            }
+
+                            &__subtitle {
+                                margin-top: 60px;
+                                font-size: 40px;
+                                color: #00a4b8;
+                                margin-bottom: 50px;
+                                width: 500px;
+                            }
+
+                            &__description {
+                                margin-top: 100px;
+                                font-size: 20px;
+                                border-left: 0.5px solid #fafafa52;
+                                width: 600px;
+                                //height: calc(100% - 495px) !important;
+
+                                .data-analyze {
+                                    .data-item {
+                                        font-size: 18px;
+                                        display: flex;
+                                        column-gap: 20px;
+                                        border-bottom: 1px solid #8a8a8a;
+                                        padding: 20px 0;
+                                        .title {
+                                            font-weight: bold;
+                                        }
+                                        .value {
+                                            color: #8a8a8a;
+                                        }
+
+                                        &:first-child {
+                                            border-top: 1px solid #8a8a8a;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .link {
+                            margin-top: 50px;
+                            font-size: 18px;
+                            margin-left: 20px;
+                            font-weight: bold;
+                            color: #00a4b8;
+                            padding-bottom: 120px;
+
+                            a {
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                            .fas {
+                                font-size: 13px;
+                                //margin-left: 10px;
+                            }
+                        }
+
+                        &--red {
+                            background: red;
+                        }
+
+                        &--yellow {
+                            background: yellow;
+                        }
+
+                        &--blue {
+                            background: blue;
+                        }
+
+                        &--green {
+                            background: green;
+                        }
+
+                        .responsive-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*For mobile phone*/
+@media only screen and (max-width: 768px) {
+    .section-3-wrapper {
+        height: 100%;
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        flex-direction: column;
+        .section-list {
+            display: none;
+            margin: 20px 0;
+            &--mobile {
+                display: flex !important;
+                column-gap: 20px;
+                justify-content: flex-start;
+                padding: 0;
+            }
+        }
+
+        &__section {
+            width: 100%;
+            margin-top: 0 !important;
+        }
+
+        &__right {
+            width: 100%;
+            margin-top: 0 !important;
+            .content-subtitle {
+                font-size: 42px;
+                width: auto;
+            }
+        }
+
+        &__carousel {
+            .carousel-wrapper {
+                &__inner-content {
+                    .carousel-inner-content {
+                        &__carousel-item {
+                            height: 100%;
+                            //position: absolute;
+                            overflow: hidden;
+                            .content {
+                                &__subtitle {
+                                    margin: 0;
+                                    font-size: 22px;
+                                    width: 80%;
+                                }
+
+                                &__description {
+                                    margin-top: 20px;
+                                    font-size: 14px;
+
+                                    .data-analyze {
+                                        .data-item {
+                                            font-size: 14px;
+                                            display: flex;
+                                            column-gap: 20px;
+                                            border-bottom: none;
+                                            padding: 10px 0;
+
+                                            &:first-child {
+                                                border-top: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .responsive-wrapper {
+                                flex-direction: column-reverse;
+                            }
+
+                            .link {
+                                margin-left: 0;
+                                padding-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
